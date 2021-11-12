@@ -1,0 +1,26 @@
+.modal {
+  .container {
+    padding: 0rem;
+  }
+
+  &-content {
+    position: relative;
+    color: $color-white;
+    background: $color-modal;
+    box-shadow: 0rem 0rem 1.5rem 0.5rem rgba(0, 0, 0, 0.03);
+    border-radius: 1rem;
+    min-height: 30rem;
+
+    .close {
+      cursor: pointer;
+      z-index: 10;
+      position: absolute;
+      right: 6rem;
+      top: 5.4rem;
+    }
+  }
+
+  &-body {
+    padding: 5rem 6rem;
+  }
+}

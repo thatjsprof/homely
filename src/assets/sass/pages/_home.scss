@@ -1,0 +1,576 @@
+.home,
+.showcase {
+  .section {
+    &-testimonial {
+      padding: 12rem 2rem;
+
+      &-title {
+        margin-bottom: 3rem;
+        text-align: center;
+        font-weight: 600;
+        font-size: 3rem;
+        line-height: 4.8rem;
+        text-align: center;
+        letter-spacing: -0.03em;
+        color: $color-black-shade-1;
+      }
+
+      &-main,
+      &-sub {
+        clear: both;
+        display: table;
+        content: "";
+        max-width: 74.6rem;
+        margin: 0 auto;
+      }
+
+      &-main {
+        margin-bottom: 5rem;
+
+        .testimonial-card {
+          @include respond(xxs) {
+            margin-bottom: 5rem;
+          }
+
+          .body {
+            position: relative;
+            border-radius: 1rem;
+            margin-bottom: 1rem;
+
+            .img {
+              width: 100%;
+              height: 16rem;
+              max-height: inherit;
+              border-radius: inherit;
+
+              @include respond(xxs) {
+                height: 30rem;
+              }
+            }
+
+            .icon {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              z-index: 10;
+              cursor: pointer;
+            }
+          }
+
+          &:not(:last-child) {
+            margin-right: 1.3rem;
+          }
+
+          .name,
+          .role {
+            line-height: 2.5rem;
+            letter-spacing: -0.03em;
+            color: $color-black;
+          }
+
+          .name {
+            font-weight: 500;
+            font-size: 1.5rem;
+            margin-bottom: 0.1rem;
+
+            @include respond(xxs) {
+              font-size: 2rem;
+              margin: 2rem 0rem 1rem 0rem;
+            }
+          }
+
+          .role {
+            font-weight: normal;
+            font-size: 1.2rem;
+
+            @include respond(xxs) {
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+
+      &-sub {
+        .testimonial-card {
+          background: $color-white;
+          border-radius: 1rem;
+
+          @include respond(xxs) {
+            margin-bottom: 6rem;
+          }
+
+          .body {
+            .img {
+              width: 100%;
+              max-height: inherit;
+              border-radius: 1rem 1rem 0rem 0rem;
+            }
+          }
+
+          .foot {
+            width: 100%;
+            padding: 2rem;
+
+            @include respond(xxs) {
+              padding: 3rem;
+            }
+
+            .content {
+              margin-bottom: 3.1rem;
+              font-size: 1rem;
+              line-height: 1.7rem;
+              color: $color-black;
+
+              @include respond(xxs) {
+                font-size: 1.8rem;
+                line-height: 2.5rem;
+              }
+            }
+
+            .name,
+            .role {
+              font-weight: 500;
+              color: $color-black;
+              line-height: 2.5rem;
+              letter-spacing: -0.03em;
+            }
+
+            .name {
+              font-size: 1.2rem;
+              margin-bottom: 0.1rem;
+
+              @include respond(xxs) {
+                font-size: 2rem;
+                margin: 2rem 0rem 1rem 0rem;
+              }
+            }
+
+            .role {
+              font-size: 1rem;
+              opacity: 0.5;
+              margin-top: -0.5rem;
+              margin-bottom: 0.1rem;
+              font-style: italic;
+
+              @include respond(xxs) {
+                font-size: 1.5rem;
+              }
+            }
+          }
+
+          &:not(:last-child) {
+            margin-right: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.home {
+  .section {
+    &-maps {
+      padding: 0rem 2rem;
+
+      .maps {
+        max-width: 74.5rem;
+        max-height: 35rem;
+        margin: 0 auto;
+
+        .vue-map {
+          border-radius: 1rem;
+        }
+      }
+    }
+
+    &-explore {
+      background-color: #d1dfe0;
+      min-height: 59.1rem;
+      position: relative;
+      overflow: hidden;
+
+      h3,
+      img.main,
+      button {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      h3 {
+        top: 47%;
+        font-weight: 600;
+        font-size: 50rem;
+        line-height: 4.8rem;
+        text-align: center;
+        letter-spacing: -0.03em;
+        opacity: 0.3;
+        margin-left: -5rem;
+        color: #d1dfe0;
+        text-shadow: -0.1rem 0 $color-black, 0 0.1rem $color-black,
+          0.1rem 0 $color-black, 0 -0.1rem $color-black;
+      }
+
+      img.main {
+        top: 45%;
+        width: 92rem;
+        height: 32.2rem;
+      }
+
+      button {
+        top: 87%;
+        background: $color-white;
+        opacity: 0.8;
+        border-radius: 0.5rem;
+        padding: 0rem 2rem;
+        font-size: 1.5rem;
+        line-height: 4.8rem;
+        letter-spacing: -0.03em;
+        color: #000000;
+
+        img.icon {
+          height: 1.5rem;
+          width: 1.5rem;
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    &-features {
+      padding: 12rem 2rem 13rem 2rem;
+
+      &-title {
+        font-weight: 600;
+        font-size: 3rem;
+        line-height: 4.8rem;
+        text-align: center;
+        letter-spacing: -0.03em;
+        margin-bottom: 4.3rem;
+      }
+
+      &-cards {
+        max-width: 72.9rem;
+        margin: 0 auto;
+        clear: both;
+        display: table;
+        clear: both;
+      }
+
+      &-card {
+        background: $color-white;
+        box-shadow: 0rem 0rem 1.5rem rgba(0, 0, 0, 0.05);
+        border-radius: 1rem;
+        padding: 3.7rem 3rem 3.5rem 3rem;
+        width: 34.5rem;
+        min-height: 51rem;
+        float: left;
+
+        @include respond(xs) {
+          font-size: 1.8rem;
+          line-height: 2.5rem;
+        }
+
+        @include respond(xs) {
+          width: 30rem;
+        }
+
+        @include respond(xxs) {
+          margin-bottom: 3rem;
+          width: 100%;
+        }
+
+        &:not(:last-child) {
+          margin-right: 3.9rem;
+        }
+
+        .title {
+          font-weight: 500;
+          font-size: 2.5rem;
+          line-height: 2rem;
+          letter-spacing: -0.03em;
+          color: $color-black;
+
+          &-2 {
+            margin-bottom: 2.5rem;
+          }
+
+          &-3 {
+            margin-bottom: 2.4rem;
+          }
+        }
+
+        .price {
+          font-weight: bold;
+          font-size: 3rem;
+          line-height: 2rem;
+          letter-spacing: -0.03em;
+          color: $color-black;
+
+          @include respond(xs) {
+            font-size: 2.5rem;
+          }
+
+          &-1 {
+            margin-bottom: 4.3rem;
+          }
+
+          &-2 {
+            margin-bottom: 4rem;
+          }
+        }
+
+        .title-1 {
+          font-weight: 500;
+          font-size: 1.5rem;
+          line-height: 1.7rem;
+          color: $color-black;
+          margin-bottom: 1.4rem;
+        }
+
+        select {
+          padding: 1.5rem 0rem 1.5rem 2rem;
+          font-weight: 500;
+          font-size: 1.5rem;
+          line-height: 2rem;
+          letter-spacing: -0.03em;
+          color: $color-black;
+          width: 14.8rem;
+          border: 0.1rem solid rgba(45, 119, 141, 0.1);
+          box-sizing: border-box;
+          border-radius: 0.5rem;
+          margin-bottom: 2rem;
+        }
+
+        .features {
+          &-1 {
+            margin-bottom: 3.2rem;
+          }
+
+          &-2 {
+            margin-bottom: 2.8rem;
+          }
+
+          li {
+            font-weight: 500;
+            font-size: 1.5rem;
+            line-height: 3.2rem;
+            color: $color-black;
+          }
+        }
+
+        button {
+          padding: 2rem 0rem;
+          border-radius: 1rem;
+          font-weight: 500;
+          font-size: 1.5rem;
+          line-height: 2rem;
+        }
+      }
+    }
+
+    &-why {
+      padding: 10rem 2rem;
+
+      &-title {
+        margin-bottom: 0.5rem;
+        text-align: center;
+        font-weight: 600;
+        font-size: 3rem;
+        line-height: 4.8rem;
+        text-align: center;
+        letter-spacing: -0.03em;
+        color: $color-black-shade-1;
+
+        @include respond(xxs) {
+          font-size: 4rem;
+          margin-bottom: 2rem;
+        }
+      }
+
+      &-text {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        text-align: center;
+        letter-spacing: -0.03em;
+        color: $color-black;
+        max-width: 54rem;
+        margin: 0 auto;
+        margin-bottom: 5rem;
+
+        @include respond(xxs) {
+          font-size: 2rem;
+          line-height: 3.5rem;
+        }
+      }
+
+      &-cards {
+        max-width: 74.6rem;
+        margin: 0 auto;
+
+        @include respond(xxs) {
+          .col-12 {
+            text-align: center;
+          }
+        }
+      }
+
+      &-card {
+        img {
+          margin-bottom: 1.6rem;
+        }
+
+        h3 {
+          font-weight: 500;
+          font-size: 1.5rem;
+          line-height: 2.5rem;
+          letter-spacing: -0.03em;
+          color: $color-black;
+          margin-bottom: 0.45rem;
+        }
+
+        p {
+          max-width: 16rem;
+          font-size: 1rem;
+          line-height: 1.8rem;
+          letter-spacing: -0.03em;
+          color: $color-black;
+        }
+
+        &:not(:last-child) {
+          margin-right: 2%;
+        }
+
+        @include respond(xxs) {
+          img {
+            margin-bottom: 3.5rem;
+          }
+
+          h3 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+          }
+
+          p {
+            font-size: 2rem;
+            line-height: 3rem;
+            max-width: 28rem;
+            margin: 0 auto;
+            margin-bottom: 5rem;
+          }
+        }
+      }
+    }
+
+    &-header {
+      padding: 7rem 0rem 3rem 0rem;
+
+      .title {
+        font-weight: 600;
+        font-size: 4rem;
+        line-height: 4.8rem;
+        text-align: center;
+        letter-spacing: -0.03em;
+        color: #001c0e;
+        padding: 0rem 2rem;
+      }
+
+      .text {
+        text-align: center;
+
+        span {
+          cursor: pointer;
+          position: relative;
+          font-weight: 500;
+          font-size: 1.2rem;
+          line-height: 4.8rem;
+          letter-spacing: -0.03em;
+          color: $color-black-shade-1;
+          border-bottom: 0.1rem solid $color-black-shade-1;
+          padding-bottom: 0.8rem;
+
+          img {
+            position: absolute;
+            top: -5px;
+            right: -18px;
+          }
+        }
+      }
+
+      .image {
+        border-radius: 1rem;
+        max-height: 45rem;
+        margin: 0 auto;
+        margin-top: 4rem;
+        position: relative;
+
+        &-more {
+          clear: both;
+          display: table;
+          content: "";
+          position: absolute;
+          bottom: 1.5rem;
+          right: 1.5rem;
+          font-weight: 500;
+          font-size: 1rem;
+          padding: 1rem 1.7rem;
+          width: 15.8rem;
+          height: 5rem;
+          cursor: pointer;
+          line-height: 1.3rem;
+          border-radius: 0.5rem;
+          letter-spacing: -0.03em;
+          color: $color-white;
+          background-color: $color-black;
+          box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.25);
+
+          .imgs,
+          span,
+          .right {
+            float: left;
+          }
+
+          .imgs {
+            position: relative;
+
+            &-1,
+            &-2 {
+              position: absolute;
+            }
+
+            &-1 {
+              width: 2.8rem;
+              height: 2.8rem;
+              z-index: 2;
+            }
+
+            &-2 {
+              bottom: -3.7rem;
+              right: -3.7rem;
+              width: 3.8rem;
+              height: 3.8rem;
+              z-index: 1;
+            }
+          }
+
+          span {
+            margin-left: 4rem;
+            margin-top: 0.8rem;
+          }
+
+          .right {
+            height: 0.8rem;
+            width: 0.5rem;
+            margin-left: 0.8rem;
+            margin-top: 1.05rem;
+          }
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

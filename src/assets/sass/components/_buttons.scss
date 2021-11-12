@@ -1,0 +1,29 @@
+.btn {
+  &-block {
+    width: 100%;
+  }
+
+  &-black {
+    color: $color-white;
+    background-color: $color-black-shade-1;
+  }
+
+  &-main {
+    color: $color-white;
+    background-color: $color-main;
+
+    &-outline {
+      color: $color-main;
+      background-color: $color-white;
+      border: 0.15rem solid $color-main;
+    }
+  }
+
+  &-white {
+    &-outline {
+      color: $color-white;
+      background-color: transparent;
+      border: 0.15rem solid $color-white;
+    }
+  }
+}

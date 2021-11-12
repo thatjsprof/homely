@@ -1,0 +1,38 @@
+.catalogue {
+  text-align: center;
+  padding: 5rem 0rem 30.8rem 0rem;
+
+  h3 {
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 6rem;
+    letter-spacing: -0.03em;
+    color: $color-black;
+    margin-bottom: 1.5rem;
+    margin-top: -4rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: $color-black;
+    max-width: 54rem;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+
+  button {
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 1.7rem 3rem;
+    border-radius: 0.5rem;
+
+    img {
+      margin-top: -0.3rem;
+      margin-left: 0.5rem;
+    }
+  }
+}

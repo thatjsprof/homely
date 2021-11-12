@@ -1,0 +1,40 @@
+@mixin clearfix {
+    &::after {
+        clear: both;
+        display: table;
+        content: '';
+    }
+}
+
+@mixin absCenter {
+    & {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@mixin respond ($breakpoint) {
+    @if $breakpoint == xxs {
+        @media (max-width: 36.5rem) { @content };
+    }
+    @if $breakpoint == xs {
+        @media (max-width: 45.598rem) { @content };
+    }
+    @if $breakpoint == sm-container {
+        @media (max-width: 68rem) { @content };
+    }
+    @if $breakpoint == sm {
+        @media (max-width: 76.798rem) { @content };
+    }
+    @if $breakpoint == md {
+        @media (max-width: 99.198rem) { @content };
+    }
+    @if $breakpoint == lg {
+        @media (max-width: 119.998rem) { @content };
+    }
+    @if $breakpoint == xl {
+        @media (max-width: 139.998rem) { @content };
+    }
+}

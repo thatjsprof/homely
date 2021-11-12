@@ -1,0 +1,205 @@
+.nav {
+  background-color: $color-white;
+  box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.03);
+  padding: 1.5rem 0rem;
+
+  &-img {
+    img {
+      width: 4rem;
+      height: 2.5rem;
+    }
+  }
+
+  &-links {
+    ul {
+      list-style: none;
+      margin: 0rem;
+
+      & > li {
+        display: inline-block;
+
+        &:not(:last-child) {
+          padding-right: 5.6rem;
+        }
+
+        a {
+          font-weight: 500;
+          font-size: 1.2rem;
+          line-height: 1.6rem;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  &-action {
+    button {
+      border-radius: 0.5rem;
+      padding: 1.4rem 1.5rem;
+      font-size: 1rem;
+      line-height: 1.3rem;
+    }
+  }
+
+  &-icons {
+    z-index: 10;
+
+    div {
+      width: 35px;
+      height: 5px;
+      background-color: $color-black;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+
+    &.change {
+      .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+      }
+
+      .bar2 {
+        opacity: 0;
+      }
+
+      .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+      }
+    }
+  }
+
+  &-cover {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 4;
+    left: 0;
+    top: 0;
+    background-color: $color-black;
+    background-color: rgba($color-black, 0.9);
+    overflow-x: hidden;
+    transition: 0.2s;
+
+    a {
+      padding: 0.8rem;
+      text-decoration: none;
+      font-size: 36px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+
+      &:hover,
+      &:focus {
+        color: #f1f1f1;
+      }
+    }
+
+    .closebtn {
+      position: absolute;
+      top: 2rem;
+      right: 4.5rem;
+      font-size: 6rem;
+    }
+
+    &-content {
+      position: relative;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+      margin-top: 3rem;
+    }
+  }
+
+  @media screen and (max-height: 450px) {
+    .nav-cover {
+      a {
+        font-size: 2rem;
+      }
+
+      .closebtn {
+        font-size: 4rem;
+        top: 1.5rem;
+        right: 3.5rem;
+      }
+    }
+  }
+
+  .mobile-menu,
+  .main-menu {
+    display: flex;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  @include respond(xxs) {
+    .mobile-menu {
+      display: flex;
+    }
+
+    .main-menu {
+      display: none;
+    }
+  }
+
+  .modal {
+    &-body {
+      h3 {
+        font-weight: bold;
+        font-size: 5rem;
+        line-height: 6rem;
+        letter-spacing: -0.03em;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        max-width: 32.9rem;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        letter-spacing: -0.03em;
+        margin-bottom: 6rem;
+      }
+
+      input {
+        line-height: 4.8rem;
+        padding: 1rem 3.5rem;
+      }
+
+      textarea {
+        padding: 3rem 3.5rem;
+      }
+
+      input,
+      textarea {
+        font-weight: 500;
+        font-size: 1.5rem;
+        letter-spacing: -0.03em;
+        color: $color-black-shade-1;
+        border-radius: 0.5rem;
+      }
+
+      button {
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 4.8rem;
+        letter-spacing: -0.03em;
+        padding: 1rem 6.4rem;
+        border-radius: 0.5rem;
+
+        &.one {
+          margin-top: 8rem;
+        }
+
+        &.two {
+          margin-top: 4rem;
+        }
+      }
+
+      .row:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+.footer {
+  color: $color-white;
+  background-color: $color-footer;
+  padding: 7rem 0rem 5rem 0rem;
+
+  &-text,
+  &-link {
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 3.1rem;
+    color: $color-white;
+  }
+
+  &-text {
+    opacity: 0.4;
+    margin-right: 3.1rem;
+    display: inline;
+  }
+
+  &-link {
+    cursor: pointer;
+  }
+
+  @include respond(xxs) {
+    .col-md-7 {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &-row {
+    margin-top: 5rem;
+  }
+
+  .text {
+    &-1 {
+      &-main {
+        font-weight: 500;
+        font-size: 3rem;
+        line-height: 4rem;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        margin-bottom: 3.2rem;
+
+        img {
+          margin-right: 1.5rem;
+          width: 6.5rem;
+          height: 3.813rem;
+        }
+      }
+
+      &-sub {
+        font-size: 1.5rem;
+        line-height: 3.1rem;
+      }
+    }
+
+    &-2 {
+      &-main {
+        font-weight: 600;
+        font-size: 4rem;
+        line-height: 4.8rem;
+        margin-bottom: 0.8rem;
+      }
+
+      &-sub {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+      }
+    }
+  }
+
+  .input {
+    position: relative;
+
+    input {
+      font-weight: 500;
+      font-size: 1.5rem;
+      line-height: 4.8rem;
+      letter-spacing: -0.03em;
+      padding: 1.3rem 15rem 1.2rem 3rem;
+      margin-top: 3rem;
+      border-radius: 0.5rem;
+      color: $color-black-shade-1;
+    }
+
+    button {
+      position: absolute;
+      right: 1.6rem;
+      top: 1rem;
+      border-radius: 0.5rem;
+      padding: 2rem 2.4rem;
+      font-size: 1rem;
+      line-height: 1.3rem;
+    }
+  }
+}
