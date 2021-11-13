@@ -607,16 +607,21 @@ button {
       position: relative;
       border-radius: 1rem;
       margin-bottom: 1rem; }
-      .home .section-testimonial-main .testimonial-card .body .img,
-      .showcase .section-testimonial-main .testimonial-card .body .img {
+      .home .section-testimonial-main .testimonial-card .body .img, .home .section-testimonial-main .testimonial-card .body video,
+      .showcase .section-testimonial-main .testimonial-card .body .img,
+      .showcase .section-testimonial-main .testimonial-card .body video {
         width: 100%;
         height: 16rem;
         max-height: inherit;
         border-radius: inherit; }
         @media (max-width: 36.5rem) {
-          .home .section-testimonial-main .testimonial-card .body .img,
-          .showcase .section-testimonial-main .testimonial-card .body .img {
+          .home .section-testimonial-main .testimonial-card .body .img, .home .section-testimonial-main .testimonial-card .body video,
+          .showcase .section-testimonial-main .testimonial-card .body .img,
+          .showcase .section-testimonial-main .testimonial-card .body video {
             height: 30rem; } }
+      .home .section-testimonial-main .testimonial-card .body video,
+      .showcase .section-testimonial-main .testimonial-card .body video {
+        background-color: #ddd; }
       .home .section-testimonial-main .testimonial-card .body .icon,
       .showcase .section-testimonial-main .testimonial-card .body .icon {
         position: absolute;

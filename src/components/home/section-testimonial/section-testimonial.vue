@@ -6,9 +6,13 @@
         <div class="col-md-4 col-sm-4 col-12">
           <div class="testimonial-card">
             <div class="body">
-              <img class="img" src="@/assets/images/bg/img-1.png" />
-              <div class="overlay"></div>
-              <img class="icon" src="@/assets/images/icons/play.png" />
+              <video muted autoplay>
+                <source
+                  src="@/assets/videos/1.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
             </div>
             <p class="name">Amari Onoma</p>
             <p class="role">Emerald Gardens, 300SQM</p>
