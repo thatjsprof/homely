@@ -5,14 +5,17 @@
       <div class="row">
         <div class="col-md-4 col-sm-4 col-12">
           <div class="testimonial-card">
-            <div class="body">
-              <video muted autoplay>
-                <source
-                  src="@/assets/videos/1.mp4"
-                  type="video/mp4"
-                />
-                Your browser does not support the video tag.
-              </video>
+            <div
+              class="body"
+              data-bs-toggle="modal"
+              data-bs-target="#testimonial"
+              @click="
+                playTestimonial('https://www.youtube.com/embed/tgbNymZ7vqY')
+              "
+            >
+              <img class="img" src="@/assets/images/bg/img-1.png" />
+              <div class="overlay"></div>
+              <img class="icon" src="@/assets/images/icons/play.png" />
             </div>
             <p class="name">Amari Onoma</p>
             <p class="role">Emerald Gardens, 300SQM</p>
@@ -20,7 +23,14 @@
         </div>
         <div class="col-md-4 col-sm-4 col-12">
           <div class="testimonial-card">
-            <div class="body">
+            <div
+              class="body"
+              data-bs-toggle="modal"
+              data-bs-target="#testimonial"
+              @click="
+                playTestimonial('https://www.youtube.com/embed/tgbNymZ7vqY')
+              "
+            >
               <img class="img" src="@/assets/images/bg/img-2.png" />
               <div class="overlay"></div>
               <img class="icon" src="@/assets/images/icons/play.png" />
@@ -31,7 +41,14 @@
         </div>
         <div class="col-md-4 col-sm-4 col-12">
           <div class="testimonial-card">
-            <div class="body">
+            <div
+              class="body"
+              data-bs-toggle="modal"
+              data-bs-target="#testimonial"
+              @click="
+                playTestimonial('https://www.youtube.com/embed/tgbNymZ7vqY')
+              "
+            >
               <img class="img" src="@/assets/images/bg/img-3.png" />
               <div class="overlay"></div>
               <img class="icon" src="@/assets/images/icons/play.png" />
@@ -94,5 +111,34 @@
         </div>
       </div>
     </div>
+    <Modal :id="'testimonial'" :type="'xl'">
+      <iframe
+        width="100%"
+        height="550px"
+        frameborder="0"
+        allowfullscreen
+        :src="testimonialVideo"
+        ref="iframe"
+      ></iframe>
+    </Modal>
   </section>
 </template>
+<script>
+import Modal from "@/components/global/modal/modal.vue";
+
+export default {
+  components: {
+    Modal,
+  },
+  data() {
+    return {
+      testimonialVideo: "",
+    };
+  },
+  methods: {
+    playTestimonial(url) {
+      this.testimonialVideo = url;
+    },
+  },
+};
+</script>

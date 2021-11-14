@@ -70,6 +70,7 @@
 </template>
 <script>
 import Modal from "@/components/global/modal/modal.vue";
+
 export default {
   components: {
     Modal,

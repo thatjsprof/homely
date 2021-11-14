@@ -9,9 +9,9 @@
     >
       <option value="" v-if="custom">{{ custom }}</option>
       <option
-        v-for="options in optionValues"
+        v-for="(options, index) in optionValues"
         :value="options.value"
-        :key="options.value"
+        :key="index"
         :selected="options.value === defaultOption"
       >
         {{ options.text }}
